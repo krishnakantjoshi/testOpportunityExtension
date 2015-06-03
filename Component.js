@@ -28,6 +28,14 @@ this.cus.crm.opportunity.Component.extend("cus.crm.opportunity.CRM_OPPRTNTYExten
 		},
 			
 		customizing: {
-		}			
-	}
+		    
+		    "sap.ui.viewModifications":{
+             "cus.crm.opportunity.view.S3":{
+            "salesTeam":{
+                "visible": false
+            } // end of salesTeam
+        } // end of S3
+      } // end of viewModifications
+		}// end of  customizing			
+	} // end of metadata
 });
