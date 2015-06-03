@@ -26,6 +26,9 @@
 
 <!-- Application launch configuration -->
 <script>
+        // Jerry 2015-06-02 18:24PM lower case, since in Opportunity's component.js, lower case is required.
+		jQuery.sap.registerModulePath("cus.crm.opportunity",'../crm_opprtnty');
+			
         sap.ui.getCore().attachInitEvent(function () {
             var oComponentContainer = new sap.ui.core.ComponentContainer({
                 height : "100%",
@@ -42,4 +45,3 @@
 </body>
 
 </html>
-
