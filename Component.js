@@ -31,11 +31,16 @@ this.cus.crm.opportunity.Component.extend("cus.crm.opportunity.CRM_OPPRTNTYExten
 		    
 		    "sap.ui.viewModifications":{
              "cus.crm.opportunity.view.S3":{
-            "salesTeam":{
+            "opportunityProspectName":{
                 "visible": false
             } // end of salesTeam
         } // end of S3
-      } // end of viewModifications
+      }, // end of viewModifications,
+      "sap.ui.controllerExtensions" : {
+				"cus.crm.opportunity.view.S3" : {
+					controllerName : "cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extS3"
+				}
+			}
 		}// end of  customizing			
 	} // end of metadata
 });
