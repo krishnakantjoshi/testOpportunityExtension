@@ -14,6 +14,14 @@ sap.ui.controller("cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extS3", {
 	
 	extHookGetDataForDetailScreen : function() {
 		
-        debugger;
+        var oppHeader = this.byId("opportunityHeader");
+
+        var attribute = oppHeader.getAggregation("attributes");
+
+        var hideField = attribute[attribute.length - 1];
+
+        if( hideField ) {
+            hideField.setVisible(false);
+        }
 	}
 });
