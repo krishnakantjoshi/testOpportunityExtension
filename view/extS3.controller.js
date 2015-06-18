@@ -14,7 +14,6 @@ sap.ui.controller("cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extS3", {
 	
 	extHookGetDataForDetailScreen : function() {
 		
-		// dummy
         var oppHeader = this.byId("opportunityHeader");
 
         var attribute = oppHeader.getAggregation("attributes");

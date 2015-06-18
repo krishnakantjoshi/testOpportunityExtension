@@ -36,6 +36,16 @@ this.cus.crm.opportunity.Component.extend("cus.crm.opportunity.CRM_OPPRTNTYExten
             } // end of salesTeam
         } // end of S3
       }, // end of viewModifications,
+      "sap.ui.viewExtensions":{
+			"cus.crm.opportunity.view.S3":{
+				"opportunityInfoTabContentTopExtension": {
+				className: "sap.ui.core.Fragment",
+				fragmentName: "cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extCreatedBy.fragment",
+				type : "XML"
+				}
+			  }
+		},
+
       "sap.ui.controllerExtensions" : {
 				"cus.crm.opportunity.view.S3" : {
 					controllerName : "cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extS3"

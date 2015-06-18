@@ -1,0 +1,4 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	  	<Label  text="Test Jerry"/>
+      		<Text  text="Test Jerry"/>
+</core:FragmentDefinition> 
