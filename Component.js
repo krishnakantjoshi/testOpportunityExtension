@@ -25,6 +25,12 @@ this.cus.crm.opportunity.Component.extend("cus.crm.opportunity.CRM_OPPRTNTYExten
 		version : "1.0",
 		
 		config: {
+		    "sap.ca.serviceConfigs": [{
+                name:"ZJERRY_DEMO",
+	            serviceUrl:"/sap/opu/odata/sap/ZJERRY_DEMO_SRV/",
+                isDefault:true
+}]
+
 		},
 			
 		customizing: {
@@ -38,9 +44,9 @@ this.cus.crm.opportunity.Component.extend("cus.crm.opportunity.CRM_OPPRTNTYExten
       }, // end of viewModifications,
       "sap.ui.viewExtensions":{
 			"cus.crm.opportunity.view.S3":{
-				"opportunityInfoTabContentTopExtension": {
+				"opportunityInfoTabContentBottomExtension": {
 				className: "sap.ui.core.Fragment",
-				fragmentName: "cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extCreatedBy.fragment",
+				fragmentName: "cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extCreatedBy",
 				type : "XML"
 				}
 			  }

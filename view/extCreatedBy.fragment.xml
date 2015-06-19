@@ -1,4 +1,9 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
-	  	<Label  text="Test Jerry"/>
-      		<Text  text="Test Jerry"/>
-</core:FragmentDefinition> 
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:ui="sap.ui.layout">
+	  <ui:form.SimpleForm id="opportunityExtension">
+								<ui:content>
+									<Label id="opportunityCreatedByLbael" text="Created By">
+									</Label>
+									<Text id="opportunityCreatedByValue" text="{json>/extCreatedBy}"></Text>
+								</ui:content>
+								</ui:form.SimpleForm>
+</core:FragmentDefinition>
