@@ -4,7 +4,7 @@
 								<ui:content>
 									<Label id="opportunityCreatedByLbael" text="Created By">
 									</Label>
-									<Input id="createdByInput" value="Jerry"></Input>
+									<Input id="createdByInput" value="{extCreatedBy}"></Input>
 								</ui:content>
 								</ui:form.SimpleForm>
 </core:FragmentDefinition>
