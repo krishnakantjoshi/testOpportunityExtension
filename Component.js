@@ -46,15 +46,26 @@ this.cus.crm.opportunity.Component.extend("cus.crm.opportunity.CRM_OPPRTNTYExten
 			"cus.crm.opportunity.view.S3":{
 				"opportunityInfoTabContentBottomExtension": {
 				className: "sap.ui.core.Fragment",
-				fragmentName: "cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extCreatedBy",
+				fragmentName: "cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extS3CreatedBy",
+				type : "XML"
+				}
+			  },
+			  "cus.crm.opportunity.view.S4":{
+				"opportunityEditContentBottomExtension": {
+				className: "sap.ui.core.Fragment",
+				fragmentName: "cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extS4CreatedBy",
 				type : "XML"
 				}
 			  }
+			  
 		},
 
       "sap.ui.controllerExtensions" : {
 				"cus.crm.opportunity.view.S3" : {
 					controllerName : "cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extS3"
+				},
+				"cus.crm.opportunity.view.S4" : {
+					controllerName : "cus.crm.opportunity.CRM_OPPRTNTYExtension.view.extS4"
 				}
 			}
 		}// end of  customizing			
